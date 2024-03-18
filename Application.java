@@ -25,7 +25,7 @@ public class Application extends Thread {
         cp.setLayout(new FlowLayout(FlowLayout.CENTER));
         frame.setTitle("Application");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        preferences = Preferences.userNodeForPackage(Application3.class);
+        preferences = Preferences.userNodeForPackage(Application.class);
         int width = preferences.getInt(WIDTH_KEY, 300);
         int height = preferences.getInt(HEIGHT_KEY, 400);
         int posx = preferences.getInt(POS_X, 100);
