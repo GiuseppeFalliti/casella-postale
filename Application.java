@@ -90,6 +90,7 @@ public class Application extends Thread {
                                 break;
                         }
                         // controlla se la casella è vuota e aggiorna la casella a rosso.
+                        //utilizziamo l'AtomicBoolean "postaInUso"  per assicurarci che un thread alla volta possa impostare il messaggio.
                         if (!postaInUso.getAndSet(true)) {
                             targetPosta.setText(MESSAGGE_IN_A_BOTTLE);
                             targetPosta.setBackground(new Color(255, 0, 0));
