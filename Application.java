@@ -89,7 +89,7 @@ public class Application extends Thread {
                         }
                         if (!Postabool.getAndSet(true)) {
                             targetPosta.setText(MESSAGGE_IN_A_BOTTLE);
-                            SwingUtilities.invokeLater(() -> targetPosta.setBackground(new Color(255, 0, 0)));
+                             targetPosta.setBackground(new Color(255, 0, 0));
                         }
                         try {
                             Thread.sleep(1000); 
@@ -98,7 +98,7 @@ public class Application extends Thread {
                         }
                         if (targetPosta.getText().equals(MESSAGGE_IN_A_BOTTLE)) {
                             targetPosta.setText(MESSAGGE_READ);
-                            SwingUtilities.invokeLater(() -> targetPosta.setBackground(new Color(0, 255, 0)));
+                           targetPosta.setBackground(new Color(0, 255, 0));
                         }
                         Postabool.set(false);
                     }
