@@ -1,4 +1,4 @@
-# Istruzioni per l'esecuzione del programma
+# Progetto Casella Postale
 
 ## Descrizione
 Il programma simula il comportamento di comunicazione tramite tre caselle di posta. Le caselle di posta sono utilizzate da 10 postini che inviano messaggi e da 3 lettori che leggono i messaggi inviati.
