@@ -32,6 +32,7 @@ public class Application extends Thread {
         int posy = preferences.getInt(POS_Y, 100);
 
         frame.setSize(900, 300);
+        frame.setResizable(false);
         frame.setLocation(posx, posy);
         frame.addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
